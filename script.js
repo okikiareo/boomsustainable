@@ -2,8 +2,10 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
+
 // Sticky Navigation on Scroll
 const nav = document.querySelector('nav');
+
 
 // Add scrolled class to nav when scrolling
 window.addEventListener('scroll', () => {
@@ -15,29 +17,27 @@ window.addEventListener('scroll', () => {
 });
 
 // Mobile menu toggle
-if (mobileMenu && navLinks) {
-    mobileMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        
-        // Animate hamburger menu
-        const spans = mobileMenu.querySelectorAll('span');
-        if (navLinks.classList.contains('active')) {
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-            spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
-        }
-    });
-}
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    
+    // Animate hamburger menu
+    const spans = mobileMenu.querySelectorAll('span');
+    if (navLinks.classList.contains('active')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+    } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+});
 
 // Close mobile menu when clicking on a link
-const navLinksItems = document.querySelectorAll('.nav-links a:not(.has-dropdown)');
+const navLinksItems = document.querySelectorAll('.nav-links a');
 navLinksItems.forEach(link => {
     link.addEventListener('click', () => {
-        if (window.innerWidth <= 968 && navLinks) {
+        if (window.innerWidth <= 968) {
             navLinks.classList.remove('active');
             const spans = mobileMenu.querySelectorAll('span');
             spans[0].style.transform = 'none';
@@ -49,50 +49,30 @@ navLinksItems.forEach(link => {
 
 // Dropdown functionality for mobile
 const dropdown = document.querySelector('.dropdown');
-if (dropdown) {
-    const dropdownLink = dropdown.querySelector('a.has-dropdown');
-    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-    
-    if (dropdownLink && dropdownMenu) {
-        dropdownLink.addEventListener('click', (e) => {
-            if (window.innerWidth <= 968) {
-                e.preventDefault();
-                if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
-                    dropdownMenu.style.display = 'block';
-                } else {
-                    dropdownMenu.style.display = 'none';
-                }
-            }
-        });
-    }
+const dropdownLink = dropdown.querySelector('a');
+
+if (window.innerWidth <= 968) {
+    dropdownLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const menu = dropdown.querySelector('.dropdown-menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
 }
 
 // Update dropdown behavior on window resize
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 968 && navLinks) {
+    if (window.innerWidth > 968) {
         navLinks.classList.remove('active');
-        if (mobileMenu) {
-            const spans = mobileMenu.querySelectorAll('span');
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
-        }
-        
-        // Reset dropdown display on desktop
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        if (dropdownMenu) {
-            dropdownMenu.style.display = '';
-        }
+        const spans = mobileMenu.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
     }
 });
 
 
 
-
-
-
-
-
+// GOOOOOOOOOOOD
 mobileMenu.addEventListener('click', () => {
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
     
@@ -101,7 +81,7 @@ mobileMenu.addEventListener('click', () => {
         navLinks.style.top = '80px';
         navLinks.style.left = '0';
         navLinks.style.right = '0';
-        navLinks.style.background = 'rgba(75, 163, 195, 0.98)';
+        navLinks.style.background = 'var(--green)';
         navLinks.style.flexDirection = 'column';
         navLinks.style.padding = '2rem';
         navLinks.style.gap = '1.5rem';

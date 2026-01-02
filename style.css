@@ -26,6 +26,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+  padding-top: 70px;
 }
 
 .hero {
@@ -40,16 +41,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
-  position: relative;
-  z-index: 10;
+  padding: 1rem 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--green);
+  transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+nav.scrolled {
+  background: var(--lt-green);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem 5%;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: white;
 }
@@ -60,7 +71,7 @@ nav {
   justify-content: center;
 }
 .logo-icon img {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 .nav-links {
@@ -101,6 +112,64 @@ nav {
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 0;
+  margin-top: 1rem;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: var(--orange);
+  color: #000;
+  opacity: 1;
+}
+
+/* Arrow indicator for dropdown */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(45deg);
 }
 
 /* Hero Content */
