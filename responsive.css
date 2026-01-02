@@ -1,0 +1,550 @@
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonials-grid {
+      grid-template-columns: 350px 1fr;
+      gap: 3rem;
+  }
+  
+  .testimonials-right h2 {
+      font-size: 3rem;
+  }
+  .gallery-card {
+    min-width: calc(50% - 1rem);
+  }
+  .footer-links {
+    gap: 2rem;
+}
+  }
+  @media (max-width: 968px) {
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: flex;
+    }
+    .abt-video-inner{
+      flex-direction: column;
+      }
+      .who-we-are {
+        padding: 4rem 0;
+    }
+  
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+  
+    .text-content h2 {
+        font-size: 2.5rem;
+    }
+  
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+  
+    .vision-card,
+    .mission-card {
+        padding: 2rem;
+    }
+    .powering-solutions {
+      padding: 4rem 0;
+  }
+  
+  .header-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+  
+  .header-text h2 {
+      font-size: 2.5rem;
+  }
+  
+  .stats-grid {
+      padding: 1.5rem 2rem;
+  }
+  
+  .stat-item h3 {
+      font-size: 2.5rem;
+  }
+  
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+  .testimonials {
+    padding: 4rem 0;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .team-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-right h2 {
+    font-size: 2.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 2.5rem;
+  }
+  
+  .testimonial-content {
+    padding-left: 3rem;
+  }
+  
+  .quote-part {
+    font-size: 1.05rem;
+  }
+  .gallery {
+    padding: 4rem 0;
+  }
+  
+  .section-header-center h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-container {
+    padding: 0 3rem;
+  }
+  
+  .gallery-card {
+    min-width: 100%;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
+  .contact {
+    padding: 4rem 0;
+    background-attachment: scroll;
+}
+
+.contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.contact-left h2 {
+    font-size: 2.5rem;
+}
+
+.contact-form-wrapper {
+    padding: 2.5rem;
+}
+
+.contact-form-wrapper h3 {
+    font-size: 1.75rem;
+}
+.footer {
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-top {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.footer-links {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+  }
+  
+  @media (max-width: 780px) {
+    .logo-icon h3 {
+      font-size: 1rem;
+    }
+    .logo-icon img {
+      width: 3rem;
+    }
+    .hero-image img {
+      height: 320px;
+    }
+    .hero-text h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav {
+      padding: 1rem 4%;
+    }
+    .cta-button {
+      padding: 0.7rem 1.5rem;
+    }
+    .hero-content {
+      padding: 2rem 4%;
+    }
+  
+    .renewable-button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+    }
+    .abt-video-inner{
+      flex-direction: column;
+      }
+      .abt-video-inner {
+          width: 95%;
+          padding: 1rem;
+      }
+  }
+  
+  @media (max-width: 640px) {
+    .who-we-are {
+      padding: 3rem 0;
+  }
+  
+  .text-content h2 {
+      font-size: 1.5rem;
+  }
+  
+  .text-content p {
+      font-size: 0.95rem;
+  }
+  
+  .know-us-button {
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+  }
+  
+  .vision-card h3,
+  .mission-card h3 {
+      font-size: 1.5rem;
+  }
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .header-text p {
+    font-size: 0.95rem;
+  }
+  
+  .stats-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .stat-divider {
+    width: 60px;
+    height: 1px;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 2rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+    .testimonials {
+        padding: 3rem 0;
+    }
+  
+    .testimonials-right h2 {
+        font-size: 1.5rem;
+    }
+  
+    .intro-text {
+        font-size: 0.95rem;
+    }
+  
+    .testimonial-card {
+        padding: 2rem;
+    }
+  
+    .quote-icon {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+  
+    .quote-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+  
+    .testimonial-content {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+  
+    .quote-part {
+        font-size: 1rem;
+    }
+  
+    .author-avatar {
+        width: 50px;
+        height: 50px;
+    }
+  
+    .author-info h4 {
+        font-size: 1rem;
+    }
+  
+    .author-info p {
+        font-size: 0.85rem;
+    }
+  
+    .testimonial-bg-icon {
+        display: none;
+    }
+    .sponsors-inner{
+      gap: 1rem;
+      }
+    .sponsors-inner img{
+      width: 6rem;
+        }
+        
+      .section-header-center h2 {
+        font-size: 1.5rem;
+    }
+  
+    .carousel-container {
+        padding: 0 2.5rem;
+    }
+  
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+  
+    .card-image {
+        height: 200px;
+    }
+  
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+  
+    .card-content p {
+        font-size: 0.9rem;
+    }
+  
+    .learn-more-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    .contact {
+        padding: 3rem 0;
+    }
+  
+    .contact-left h2 {
+        font-size: 1.5rem;
+    }
+  
+    .contact-left p {
+        font-size: 1rem;
+    }
+  
+    .contact-form-wrapper {
+        padding: 2rem;
+    }
+  
+    .contact-form-wrapper h3 {
+        font-size: 1.5rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
+  
+    .submit-btn,
+    .start-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+    .footer-links {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+
+  .footer-brand h3 {
+      font-size: 1.3rem;
+  }
+
+  .footer-brand .logo-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 1.6rem;
+  }
+
+  .footer-tagline {
+      font-size: 0.95rem;
+  }
+
+  .footer-column h4 {
+      font-size: 1rem;
+  }
+
+  .social-links a {
+      width: 36px;
+      height: 36px;
+  }
+
+  .footer-legal {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  }
+  @media (max-width: 500px) {
+      .mobile-menu span {
+        width: 22px;
+        height: 2px;
+      }
+  .cta-button {
+    display: none;
+  }
+  .hero-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .mobile-h3 {
+    display: inline;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 15%;
+  }
+  .hero-image img {
+    height: 265px;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .abt-video-inner .abt-vid{
+    width:320px;
+     height: 185px;
+  }
+  .abt-vid iframe{
+    width:100%;
+     height: 100%;
+  }
+  .team-image {
+    max-width: 230px;
+  }
+  .section-tag {
+    padding: 0.4rem .9rem;
+    font-size: .85rem;
+  }
+  .gallery-item img{
+    width: 180px;
+    height: 100%;
+  }
+  .carousel-dots {
+    margin-top: 1.5rem;
+  }
+  .gallery {
+    padding: 1rem 0;
+  }
+  .footer-tagline {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  }
+  @media (max-width: 380px) {
+      .mobile-h3 {
+          font-size: 1.1rem;
+      }
+      h2 {
+        font-size: 1.2rem !important;
+    }
+    .contact-form-wrapper h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+      .renewable-button {
+          padding: 0.5rem 1rem;
+          font-size: .9rem;
+      }
+      .abt-video-inner .abt-vid{
+          width:230px;
+           height: 205px;
+      }
+      .service-card {
+        padding: 1.5rem;
+    }
+    .service-icon
+     {
+        width: 20px;
+        height: 20px;
+        margin-bottom: .3rem;
+    }
+    .service-icon svg{
+      width: 20px;
+      height: 20px;
+    } 
+    .author-info h4 {
+      font-size: .9rem;
+  }
+    .quote-part {
+      font-size: .9rem;
+  }
+  .sponsors h3 {
+    font-size: 1.1rem;
+  }
+    .sponsors-inner img {
+      width: 5rem;
+  }
+  .contact-left p {
+    font-size: .9rem;
+}
+.contact-form-wrapper {
+    padding: 1rem;
+}
+.submit-btn, .start-btn {
+    padding: 0.6rem 1rem;
+    font-size: .9rem;
+}
+.footer-logo h3{
+  font-size: .9rem ;
+  line-height: 1rem;
+}
+.footer-brand .logo {
+  gap: .1rem;
+}
+.footer-top {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+  }
+  
+
+  
