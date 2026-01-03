@@ -31,7 +31,6 @@ body {
 
 .hero {
   background: linear-gradient(135deg, var(--green) 0%, var(--drk-green) 100%);
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
